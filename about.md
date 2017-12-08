@@ -3,22 +3,22 @@ layout: page
 title: 关于我 
 ---
 
-一个 iOS SDK 开发者，喜欢研究一些新技术。
+一个游戏开发者，业余摄影师，喜欢旅行，读书，看电影。
 <p>
 平时喜欢整理个人博客，逛逛技术论坛。
 <p>
-了解一些 前端 基本概念和 Python 的简单用法。
-
+了解一些 Unity / Cocos Creator游戏开发技术。
+ 
 <p>
 
-所在公司
-<a target="_blank" href="https://www.talkingdata.com/"> TalkingData </a>
-是一个移动互联网大数据平台的公司，无论你是运营、产品、开发 或者是App终端用户都可以了解下我们公司。
+我的GitHub
+<a target="_blank" href="https://github.com/BillScott1024"> BillScott1024 </a>
+写了一点自己的小东西。
 <p>
 
-推荐一个我维护的 Team 博客
-<a target="_blank" href="http://talkingdata.me/"> voyagelab </a>
-里面有一些关于 iOS 、Android 和 机器学习 的文章。
+我的微博主页
+<a target="_blank" href="https://weibo.com/210004370"> @忆星辰 </a>
+欢迎关注。
 
 <p>
 
@@ -26,7 +26,7 @@ title: 关于我
 
 <p>
 
-是的，这个博客是我们大家的，目前已经有很大一部分人在使用我的博客模板了，我也很高兴大家使用我的模板。
+欢迎来到我的博客。
 
 <p>
 
@@ -40,7 +40,7 @@ title: 关于我
 
 <p> 
 
-博客源码在 <a target="_blank" href='https://github.com/leopardpan/leopardpan.github.io/'>Github</a> 上，你的 Star 是我更新的动力，谢谢~
+博客源码在 <a target="_blank" href='https://github.com/leopardpan/leopardpan.github.io/'>Github</a> 上。谢谢~
 
 <p> 
 
