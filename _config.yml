@@ -1,7 +1,7 @@
 # Basic
 title: 忆星辰
 subtitle: 个人技术博客
-description: 欢迎来到我的个人技术博客站~
+description: 欢迎来到我的博客站~
 # 头像里面的标题
 avatarTitle: 忆星辰
 # 头像里面的描述
@@ -10,20 +10,20 @@ url: "https://billscott1024.github.io/"
 
 # Comment
 comment:
-    disqus: leopard
-    # uyan: 2143225  # 有言id,登录有言官网申请
+    disqus: jaxsonwang
+    # uyan: 2151416  # 有言id,登录有言官网申请
 
 # Social
 social:
     weibo: 210004370 
-    github: leopardpan
+    github: billscott1024
     # twitter: 
     mail: jaxsonwnag@foxmail.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: 8ba1c6be0953b6f9c2ba38e57f615421  
+    id: 4a02810458dcf25cf8ed2690042938f5  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
@@ -36,7 +36,7 @@ ga:
 #
 #
 #  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+# 
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
