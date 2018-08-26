@@ -1,3 +1,9 @@
+---
+layout: post
+title: 什么是WebSocket？
+date: 2018-08-27 
+tags: 博客   
+--- 
 # 什么是WebSocket？ #
 　
 > 　WebSocket协议是一种基于ＴＣＰ的一种新的网络协议。他实现了浏览器与服务器全双工(full-duplex)通信----允许服务器主动发送信息给客户端。
