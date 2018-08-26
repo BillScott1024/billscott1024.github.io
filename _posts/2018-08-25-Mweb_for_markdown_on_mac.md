@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jekyll搭建个人博客
-date: 2018-08-27 
-tags: 博客   
+title: 使用MWeb进行Markdown博客编辑
+date: 2018-08-27
+tags: 博客
 --- 
 # 欢迎使用 MWeb
 
