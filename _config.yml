@@ -1,29 +1,29 @@
 # Basic
-title: 忆星辰
-subtitle: 个人技术博客
-description: 欢迎来到我的博客站~
+title: 潘柏信
+subtitle: 个人站
+description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: 忆星辰
+avatarTitle: leopardpan
 # 头像里面的描述
-avatarDesc: 游戏开发 / Unity / C#
-url: "https://billscott1024.github.io/"
+avatarDesc: iOS / 机器学习
+url: "http://baixin.io"
 
 # Comment
 comment:
-    disqus: jaxsonwang
-    # uyan: 2151416  # 有言id,登录有言官网申请
+    disqus: leopard
+    # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
-    weibo: 210004370 
-    github: billscott1024
-    twitter: wj1355542655
-    mail: jaxsonwang@foxmail.com
+    weibo: 5366874726 
+    github: leopardpan
+    # twitter: 
+    mail: leopardpan@icloud.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: 4a02810458dcf25cf8ed2690042938f5  
+    id: 8ba1c6be0953b6f9c2ba38e57f615421  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
@@ -36,7 +36,7 @@ ga:
 #
 #
 #  _post/ 下的文章更换成你自己的文章
-# 
+#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
