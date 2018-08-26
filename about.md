@@ -1,13 +1,24 @@
 ---
 layout: page
-title: 关于我 
+title: 关于我
 ---
 
-一个 iOS SDK 开发者，喜欢研究一些新技术。
+一个游戏开发者，业余摄影师，喜欢旅行，读书，看电影。
 <p>
 平时喜欢整理个人博客，逛逛技术论坛。
 <p>
-了解一些 前端 基本概念和 Python 的简单用法。
+了解一些 Unity / Cocos Creator游戏开发技术。
+
+<p>
+
+我的GitHub
+<a target="_blank" href="https://github.com/BillScott1024"> BillScott1024 </a>
+写了一点自己的小东西。
+<p>
+
+我的微博主页
+<a target="_blank" href="https://weibo.com/210004370"> @忆星辰 </a>
+欢迎关注。
 
 <p>
 
@@ -15,28 +26,27 @@ title: 关于我
 
 <p>
 
-是的，这个博客是我们大家的，目前已经有很大一部分人在使用我的博客模板了，我也很高兴大家使用我的模板。
+欢迎来到我的博客。
 
 <p>
 
-如果你想搭建一个跟我一样的博客，可以看我的 
+如果你想搭建一个跟我一样的博客，可以看我的
 <a href="/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a>
 教程
 
 <p>
 
-有关于博客主题的建议和意见都可以提给我，让我们一起来打造一个精美的主题吧~ 
+有关于博客主题的建议和意见都可以提给我，让我们一起来打造一个精美的主题吧~
 
-<p> 
+<p>
 
-博客源码在 <a target="_blank" href='https://github.com/leopardpan/leopardpan.github.io/'>Github</a> 上，你的 Star 是我更新的动力，谢谢~
+博客源码在 <a target="_blank" href='https://github.com/BillScott1024/billscott1024.github.io'>Github</a> 上。谢谢~
 
-<p> 
+<p>
 
-<p> 
+<p>
 
-<p> 
+<p>
 
 
 {% include comments.html %}
-
