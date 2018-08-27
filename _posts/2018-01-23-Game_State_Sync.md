@@ -2,7 +2,7 @@
 layout: post
 title: 关于游戏状态同步
 date: 2017-09-05 
-tags: 博客   
+tags: 游戏   
 --- 
 
 
