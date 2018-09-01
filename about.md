@@ -44,7 +44,7 @@ title: 关于我
 
 <p>
 
-<p>本博客已发表文章总字数{% assign count = 0 %}
+<!-- <p>本博客已发表文章总字数{% assign count = 0 %}
 {% for post in site.posts %}
     {% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
     {% assign count = count | plus: single_count %}
@@ -55,6 +55,6 @@ title: 关于我
 {% else %}
     {{ count }}
 {% endif %} 字
-<p>
+<p> -->
 
 {% include comments.html %}
