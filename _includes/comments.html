@@ -10,12 +10,8 @@
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <div id="vcomments"></div>
     <script>
-      if(rand == null || rand == undefined){
         var rand = Math.floor(Math.random()*7);
-      }
-      
-      var arrayAvatar = ['','identicon','monsterid','wavatar','retro','robohash'];
-
+        var arrayAvatar = ['','identicon','monsterid','wavatar','retro','robohash'];
         new Valine({
             // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
             av: AV, 
