@@ -42,16 +42,16 @@ music-id: 1297750680
 ```
 1. _config.yml 是博客的配置文件，内容如图所示
     ![blogcreenshot](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180902002437.png)
-<font color=#FF1493>title</font>：网站名称<br>
-<font color=#FF1493>subtitle</font>：网站副标题<br>
-<font color=#FF1493>desciption</font>：网站描述<br>
-<font color=#FF1493>avatarTitle</font>：头像标题<br>
-<font color=#FF1493>avatarDesc</font>：头像描述<br>
-<font color=#FF1493>url</font>：网站链接<br>
-<font color=#FF1493>comment</font>：评论系统，这里我是用的是国外的Disqus和livere，由于“众所周知”的原因，Disqus评论系统在国内并不可用，需要梯子才可以访问，虽然Disqus很好用==，所以我目前是使用的livere(来必力，韩国开发的)，相关配置和使用教程会在以后放出来。国内也有（大概？）好用的评论系统，例如：畅言、Valine等，可以自行测试使用。<br>
-<font color=#FF1493>social</font>：社交账号<br>
-<font color=#FF1493>baidu</font>：网站统计<br>
-<font color=#FF1493>ga</font>：Google Analytics谷歌网站分析<br>
+title：网站名称<br>
+subtitle：网站副标题<br>
+desciption：网站描述<br>
+avatarTitle：头像标题<br>
+avatarDesc：头像描述<br>
+url：网站链接<br>
+comment：评论系统，这里我是用的是国外的Disqus和livere，由于“众所周知”的原因，Disqus评论系统在国内并不可用，需要梯子才可以访问，虽然Disqus很好用==，所以我目前是使用的livere(来必力，韩国开发的)，相关配置和使用教程会在以后放出来。国内也有（大概？）好用的评论系统，例如：畅言、Valine等，可以自行测试使用。<br>
+social：社交账号<br>
+baidu：网站统计<br>
+ga：Google Analytics谷歌网站分析<br>
 1. _includes/ 是网站模板包含的样式目录
 2. _layout/ 是网站模板的样式模板目录
 3. _post/ 是博客的文章目录，写好的markdown文件放在此目录，推送到github上，文章即可在博客上展示
@@ -78,14 +78,16 @@ music-id: 1297750680
 在_includes目录下，添加html文件 cloud-music.html
 内容为：
 
-```<!-- cloud music -->
+```
+<!-- cloud music -->
 <!-- auto=1 可以控制自动播放与否，当值为 1 即打开网页就自动播放，值为 0 时需要访客手动点击播放 -->
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
         src="//music.163.com/outchain/player?type=2&id={{ page.music-id }}&auto=1&height=66">
 </iframe>
 ```
 在post.html，文章正文的开头，添加代码：
-```<div align="center"> 
+```
+<div align="center"> 
     <!-- 在正文开头添加网易云音乐插件 -->
   {% if page.music-id %}
     {% include cloud-music.html %}
@@ -93,8 +95,10 @@ music-id: 1297750680
     </div>
 ```
 在正文的markdown文本中，开头加上：
+
 `music-id: 496869422
 `
+
 就可以在文章的开头显示网易云音乐播放器，music-id是音乐id，可以在网易云音乐播放器中查找
 <br>
 <br>
