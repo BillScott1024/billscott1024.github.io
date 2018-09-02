@@ -12,6 +12,7 @@ url: "https://billscott1024.github.io/"
 comment:
     disqus: https-extingstudio-top
     livere: MTAyMC8zOTQxNS8xNTk0Mg==  # livere uid,登录livere官网
+    valine: true
 
 # Social
 social:
