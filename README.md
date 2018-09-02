@@ -5,4 +5,5 @@
 
 * 本博客在[Vno Jekyll](https://github.com/onevcat/vno-jekyll)基础上修改的。 
 * 感谢 Google Analytic 提供网站数据统计。
-* 感谢 Disqus 提供评论系统。
+* 感谢 Disqus/livere 提供评论系统。
+* 感谢 网易云提供在线音乐播放。
