@@ -5,7 +5,7 @@ description: 欢迎来到我的博客~
 # 头像里面的标题
 avatarTitle: 忆星辰
 # 头像里面的描述
-avatarDesc: 游戏开发 / Unity / C#
+avatarDesc: 游戏开发者 / 摄影 / 旅行
 url: "https://billscott1024.github.io/"
 
 # Comment
@@ -50,7 +50,7 @@ highlighter: rouge
 textColor: #FF0000
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+cover_color: 
 
 # The blog button should not be removed.
 blog_button:

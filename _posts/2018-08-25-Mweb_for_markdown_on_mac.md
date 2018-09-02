@@ -46,11 +46,3 @@ MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目�
 
 如果要更详细了解 MWeb，建议你一定要去看一下官网的帮助文档，网址为：<https://zh.mweb.im/help.html>。我们建议在使用文档库之前，一定要阅读一下  [MWeb 文档库详细介绍](https://zh.mweb.im/mweb-library.html) 这篇文章，以便更好的使用文档库。
 
-## 帮助我们改进 MWeb
-
-如果你喜欢 MWeb，想让它变得更好，你可以：
-
-1. 推荐 MWeb，让更多的人知道。
-2. 给我们发反馈和建议：<coderforart+2333@gmail.com>
-3. 在 Mac App Store 上评价 （如果是在 MAS 上购买的话）。
-
