@@ -10,20 +10,12 @@
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <div id="vcomments"></div>
     <script>
-      var ck = new Cookie("HasLoaded");  //每个页面的new Cookie名HasLoaded不能相同
-                    if (ck.Read() == null) {//未加载过，Cookie内容为空
-                      var rand = Math.floor(Math.random()*7);
-      var arrayAvatar = ['','identicon','monsterid','wavatar','retro','robohash'];
-                        var dd = new Date();
-                        dd = new Date(dd.getYear() + 1900, dd.getMonth(), dd.getDate());
-                        dd.setDate(dd.getDate() + 365);
-                        ck.setExpiresTime(dd);
-                        ck.Write("true");  //设置Cookie。只要IE不关闭，Cookie就一直存在
-
-                    }
-      if(arrayAvatar[rand] == undefined){
-          rand = 0;
+      if(rand == null || rand == undefined){
+        var rand = Math.floor(Math.random()*7);
       }
+      
+      var arrayAvatar = ['','identicon','monsterid','wavatar','retro','robohash'];
+
         new Valine({
             // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
             av: AV, 
