@@ -13,13 +13,13 @@ music-id: 470795480
 
 ## 2.使用环境
   平台：Mac OS
-  环境：Java
+  <br>环境：Java
 ## 3.检查是否安装了Java环境
 打开终端，输入 `java -version`,输出java的版本说明已安装好了java，若报错，请安装java环境
-<center>![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903132733.png?x-oss-process=image/resize,w_500)</center>
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903132733.png?x-oss-process=image/resize,w_500)
 ## 4.Closure Compiler下载
 在[Github](https://dl.google.com/closure-compiler/compiler-latest.zip)上下载最新版的编译好的Compiler文件，解压出jar文件存放在项目外的目录下：
-<center>![compiler](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903131934.png?x-oss-process=image/resize,w_300)</center>
+![compiler](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903131934.png?x-oss-process=image/resize,w_300)
 ## 5.在终端中，输入命令，运行jar：
 ```
 java -jar /Users/wangjun/Git/compiler.jar --js_output_file=code.js '/Users/wangjun/Git/WorkProject/BallsRace/release/wxgame/code.js'
@@ -32,7 +32,7 @@ java -jar /Users/wangjun/Git/compiler.jar --js_output_file=code.js '/Users/wangj
 ## 6.使用sh脚本实现自动化打包压缩Js文件
 由于我是使用Laya Box引擎做游戏开发的，每次打包都需要手动敲代码进行代码压缩，并且还需要手动删除打包后多余的库文件，流程实在很繁琐，所以我使用了Laya打包提供的后续执行命令功能，配合sh命令进行了打包压缩的自动化，大大提高了打包效率。
 打开Laya Box的打包页面
-<center>![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903134500.png?x-oss-process=image/resize,w_400)</center>
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903134500.png?x-oss-process=image/resize,w_400)
 编写sh命令：
 
 ```
@@ -45,7 +45,7 @@ java -jar /Users/wangjun/Git/compiler.jar --js_output_file=code.js '/Users/wangj
 在后续执行脚本中填入.sh脚本的路径，在打包后就可以自动执行代码压缩，并且删除多余文件了。
 ## 7.帮助
 在终端中输入 `java -jar compiler.jar --help` 可以查看compiler的命令帮助和其他参数
-<center>![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903134930.png?x-oss-process=image/resize,w_400)</center>
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20180903134930.png?x-oss-process=image/resize,w_400)
 ## 8.其他
 我没用使用各种在线的Js代码压缩网站，原因如下：
 1. 在线压缩工具受网络状况影响；
@@ -55,6 +55,6 @@ java -jar /Users/wangjun/Git/compiler.jar --js_output_file=code.js '/Users/wangj
 
 ## 9.其他的JavaScript代码压缩工具
 [UglifyJS](https://github.com/mishoo/UglifyJS)
-[YUI Compressor](https://github.com/yui/yuicompressor)
-[Smaller](http://25.io/smaller/)
-[Minifier](https://github.com/GGG-KILLER/CSS-And-Js-Minifier)
+<br>[YUI Compressor](https://github.com/yui/yuicompressor)
+<br>[Smaller](http://25.io/smaller/)
+<br>[Minifier](https://github.com/GGG-KILLER/CSS-And-Js-Minifier)
