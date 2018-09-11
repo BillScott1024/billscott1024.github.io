@@ -8,7 +8,7 @@ music-id: 533455199
 
 # Laya中Timer的类
 
-### 1.官方文档 >> [Laya.Timer](!https://layaair.ldc.layabox.com/api/?category=Core&class=laya.utils.Timer)
+### 1.官方文档 [Laya.Timer](!https://layaair.ldc.layabox.com/api/?category=Core&class=laya.utils.Timer)
 
 | Package | laya.utils |
 | --- | --- |
@@ -17,14 +17,14 @@ music-id: 533455199
 
 > Timer 是时钟管理类。它是一个单例，不要手动实例化此类，应该通过 Laya.timer 访问。
 
-| Method| 作用 |
+|Method| 作用 |
 | --- | --- |
-| Timer()| 创建 Timer 类的一个实例。 |
-| callLater(caller:*, method:Function, args:Array = null):void| 延迟执行。 |
-| clear(caller:*, method:Function):void| 清理定时器。 |
-| clearAll(caller:*):void| 清理对象身上的所有定时器。|
-| frameLoop(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void|定时重复执行(基于帧率)。|| frameOnce(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void|定时执行一次(基于帧率)。|
-| loop(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true, jumpFrame:Boolean = false):void| 定时重复执行。|| once(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void| 定时执行一次。|| runCallLater(caller:*, method:Function):void| 立即执行 callLater 。|| runTimer(caller:*, method:Function):void| 立即提前执行定时器，执行之后从队列中删除|| toString():String| 返回统计信息。|
+|Timer()| 创建 Timer 类的一个实例。 |
+|callLater(caller:*, method:Function, args:Array = null):void| 延迟执行。 |
+|clear(caller:*, method:Function):void| 清理定时器。 |
+|clearAll(caller:*):void| 清理对象身上的所有定时器。|
+|frameLoop(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void|定时重复执行(基于帧率)。||frameOnce(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void|定时执行一次(基于帧率)。|
+|loop(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true, jumpFrame:Boolean = false):void|定时重复执行。||once(delay:int, caller:*, method:Function, args:Array = null, coverBefore:Boolean = true):void|定时执行一次。||runCallLater(caller:*, method:Function):void| 立即执行 callLater 。|| runTimer(caller:*, method:Function):void|立即提前执行定时器，执行之后从队列中删除||toString():String|返回统计信息。|
 
 ### 2.使用
 
