@@ -319,6 +319,7 @@ Set是有序列表，含有相互独立的非重复值。
 * Set不含有重复值（可以利用这个特性实现对一个数组的去重）
 * Set通过delete方法删除某个值，而Array只能通过splice。两者的使用方便程度前者更优
 * Array的很多新方法map、filter、some、every等是Set没有的（但是通过两者可以互相转换来使用）
+
 ### Object和Map对比
 * Object是字符串-值，Map是值-值
 * Object键为string类型,Map的键是任意类型
@@ -384,7 +385,7 @@ map.set(arr1, 's')
 map.get(arr1)
 ```
 # 七、迭代器（Iterator）
-###1. entries() 返回迭代器：返回键值对
+### 1. entries() 返回迭代器：返回键值对
 
 ```
 //数组
@@ -545,4 +546,5 @@ ES6中类class、Promise与异步编程、代理（Proxy）和反射（Reflectio
 >  
 >  
 > 转载自：[学习ES6笔记──工作中常用到的ES6语法](https://segmentfault.com/a/1190000016068235)
+> 
 > 原文链接：https://segmentfault.com/a/1190000016068235
