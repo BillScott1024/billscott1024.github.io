@@ -8,7 +8,7 @@ music-id: 533455199
 
 # Laya中Timer的类
 
-### 1.官方文档 [Laya.Timer](!https://layaair.ldc.layabox.com/api/?category=Core&class=laya.utils.Timer)
+### 1.官方文档 [Laya.Timer](https://layaair.ldc.layabox.com/api/?category=Core&class=laya.utils.Timer)
 
 | Package | laya.utils |
 | --- | --- |
