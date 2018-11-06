@@ -11,7 +11,7 @@ layout: default
          <span >本文总字数:{{ page.content | strip_html | strip_newlines | remove: " " | size }}字 | </span>
          <span >阅读完需要约{{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }}分钟</span>
          
-      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+      <span id="busuanzi_container_page_pv"> | 本文已阅读：<span id="busuanzi_value_page_pv" style='display:none'></span>次</span>
     </p>
     </div>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
