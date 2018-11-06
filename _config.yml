@@ -10,7 +10,7 @@ url: "https://billscott1024.github.io/"
 
 # Comment
 comment:
-    disqus: https-extingstudio-top
+    disqus: https-extingstudio-com
     livere: MTAyMC8zOTQxNS8xNTk0Mg==  # livere uid,登录livere官网
     valine: true
 
@@ -24,7 +24,7 @@ social:
 # 百度统计
 # 使用博客模板请去掉或者更换 id
 baidu:
-    id: 4a02810458dcf25cf8ed2690042938f5
+    id: e98a157d14b712d66463073d921b0253
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
