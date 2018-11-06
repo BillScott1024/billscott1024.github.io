@@ -16,7 +16,7 @@ music-id: 1293951677
 &emsp;
 
 ## 工具
-1. PDFelement Express (付费)
+1. PDFelement 6 Pro (付费)
 2. 滴答清单
 3. 微小宝公众号版
 4. Alfred 3
@@ -38,7 +38,7 @@ music-id: 1293951677
 
 &emsp;
 
-##网络
+## 网络
 1. ShadowsocksX-NG-R8 (免费)
 2. Coherence Pro (付费)
 3. Google Chrome
@@ -78,7 +78,7 @@ music-id: 1293951677
 
 &emsp;
 
-##阅读
+## 阅读
 1. Reeder (免费)
 2. Medium
 
@@ -109,7 +109,7 @@ music-id: 1293951677
 
 &emsp;
 
-##常用插件
+## 常用插件
 1. WeChatPlugin-MacOS
 2. baidu-dl
 3. Full Page Screen Capture
@@ -124,7 +124,7 @@ music-id: 1293951677
 
 &emsp;
 
-##游戏
+## 游戏
 1. 多宝 (免费)
 2. 英雄联盟
 3. Call of Duty 4 - Modern Warfare
@@ -145,9 +145,25 @@ music-id: 1293951677
 # 软件介绍
 
 
-##常用插件
+## 工具
+1. PDFelement 6 Pro (付费)
+    用来阅读，编辑PDF文件，重点功能是可以直接编辑PDF文档，在别人分享，或者已经生成好的PDF文档中，修改文字和图片，还可以进行PDF签名。
+2. 滴答清单
+    待办事项提醒工具，提供了Wedget。
+3. 微小宝公众号版
+    管理公众号，可以同时登录多个公众号进行管理，查看粉丝数据，消息群发，统计图文消息。
+4. Alfred 3 ([下载地址](http://xclient.info/s/alfred.html?t=89c7dd7c74349f5f5244ce976f151e723df05594))
+    Mac上的效率神器，提供全局搜索，高效率快捷键，堪比Mac上的 捷径
+
+
+
+
+
+
+## 常用插件
 1. WeChatPlugin-MacOS ([下载地址](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS))
-###     功能
+
+### 功能
     
 * 消息自动回复
 * 消息防撤回
