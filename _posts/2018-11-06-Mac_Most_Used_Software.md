@@ -234,7 +234,7 @@ music-id: 1293951677
 
 7. MWeb (付费)
 
-    我挑选的最好用的MarkDown文本编辑器，支持Markdown语法格式，实时预览，iCloud同步。这边文章就是用这个MWeb 编辑的Markdown文本。
+    我挑选的最好用的MarkDown文本编辑器，支持Markdown语法格式，实时预览，iCloud同步。这篇文章就是用这个MWeb 编辑的Markdown文本。
 
 8. Notability (付费)
 
