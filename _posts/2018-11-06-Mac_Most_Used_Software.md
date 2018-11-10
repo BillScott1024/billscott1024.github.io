@@ -147,20 +147,28 @@ music-id: 1293951677
 
 ## 工具
 1. PDFelement 6 Pro (付费)
+ 
     用来阅读，编辑PDF文件，重点功能是可以直接编辑PDF文档，在别人分享，或者已经生成好的PDF文档中，修改文字和图片，还可以进行PDF签名。
 2. 滴答清单
+
     待办事项提醒工具，提供了Wedget。
 3. 微小宝公众号版
+    
     管理公众号，可以同时登录多个公众号进行管理，查看粉丝数据，消息群发，统计图文消息。
 4. Alfred 3 ([下载地址](http://xclient.info/s/alfred.html?t=89c7dd7c74349f5f5244ce976f151e723df05594))
+    
     Mac上的效率神器，提供全局搜索，高效率快捷键，堪比Mac上的 捷径
 5. Archiver([下载地址](http://xclient.info/s/archiver.html?t=25fbc2b02ef700cf706ca00a5ab138536c14e6c4))
+    
     Mac上较好用的解压工具，解压速度很快，解压缩的文件类型最全面，并且支持在Finder中点击右键解压缩，强力推荐。
 6. Background Music
+     
     神器！用于在Mac上设置不同app的音乐大小，在用过Windows后，再使用Mac的用户会有一个很大的不习惯的地方，就是Mac无法像Windows一样分别去改变不同app的音量大小，但是，在安装了这款小巧的APP之后，就可以在状态栏分别设置不同APP的音量大小了，并且可以设置开机启动，非常方便，也不会占用太大的内存。
 7. Backgrounds ([下载地址](http://xclient.info/s/backgrounds.html?t=25fbc2b02ef700cf706ca00a5ab138536c14e6c4))
+    
     用于在Mac上设置动态壁纸，性能占用较小，可以使用自己下载的视频/gif/电影等作为动态壁纸。
 8. BetterTouchTool
+    
     触控板增强工具
 
 
