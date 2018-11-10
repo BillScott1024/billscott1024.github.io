@@ -24,17 +24,14 @@ music-id: 1293951677
 6. Background Music
 7. Backgrounds
 8. BetterTouchTool
-9. CleanMyMac X
+9. CleanMyMac X (付费)
 10. iStat Menus
 11. KCNScrew
 12. NewFileMenu
 13. Parallels Desktop
-14. Parallels Toolbox
-15. QQ
-16. 钉钉
-17. TeamViewer (免费)
-18. Tuxera Disk Manager (付费)
-19. iMazing (付费)
+14. TeamViewer (免费)
+15. Tuxera Disk Manager (付费)
+16. iMazing (付费)
 
 &emsp;
 
@@ -170,15 +167,82 @@ music-id: 1293951677
 8. BetterTouchTool
     
     触控板增强工具
+9. CleanMyMac X(暂无用永久免费的下载地址，可以留言邮箱，发到你的邮箱中)
+
+    Mac系统清理工具，虽说Mac不像Windows需要时常清理，但是用时间长了，系统缓存，软件卸载留存文件等，会越来越多，并且Mac的硬盘空间“寸土寸金”，有一款能方便快捷，智能的清理出一些硬盘空间还是必要的，在用过许多的清理助手和看过评价后，这款是比较简洁好用的，推荐。
+10. iStat Menus
+
+    一款用于在Mac状态栏上实时查看网络上传下载速度，电脑运行温度的软件，虽然它还有，调节电脑风扇转速，查看硬盘状态，内存状态等等便捷功能，但我主要是用来查看网络状态，习惯了Windows上可以通过360，腾讯管家等实时查看网速的功能，这款小软件是非常好用的。
+11. KCNScrew
+
+    软件序列号搜索工具，能搜到一些付费软件的序列号，太新的软件版本搜不到，老版本可以查得到。
+12. NewFileMenu
+
+    用于在Finder中右键点击能直接新建文件的工具，类似Windows中在文件夹中新建右键文件，例如新建tet,word,ppt,excel等文件。
+13. Parallels Desktop
+
+    Mac系统上最强大的虚拟机，可以在Mac上高性能运行Windows，Linux等系统，用来运行一些Windows独有的软件，游戏等都没有问题。强烈推荐。
+14. Tuxera Disk Manager (付费)
+
+    用于在Mac系统上读取的磁盘格式是NTFS(Windows系统文件格式)的硬盘。由于NTFS是Windows独有的文件格式，而Mac系统屏蔽了此格式的写入，只能通过另外的软件来读写。也可以通过将磁盘格式化为FAT32格式的文件格式，可以同时在Mac和Windows中读写文件，但是FAT32格式的文件系统并不支持单个文件大于4GB的存储，所以对于有大文件存储需求的用户来说，Tuxera Disk Manager是最好的选择。
+15. iMazing
+
+    Mac上比iTunes更好用的iPhone管理工具，可以用来备份，管理iPhone的照片，视频，文件等。
 
 
+## 网络
+1. ShadowsocksX-NG-R8 (免费) ([下载地址](https://github.com/shadowsocks/ShadowsocksX-NG))
 
+    Mac上的梯(fan)子(qiang)工具，需要自行购买或者查找免费的SS账号，可以定于服务器节点，设定全局或者配置代理模式。技术开发者必备。
 
+2. Coherence Pro (付费)
 
+    暂无
 
+3. Google Chrome ([下载地址](https://www.google.com/chrome/))
 
+    最好用的浏览器，前端开发者必备。
 
+4. Lonlife  ([下载地址](https://www.lonlife.cc/))
 
+    玲珑加速器，外服游戏加速器，延迟低，效果好，售后服务好，需要付费购买账户，不过有免费试用时间。
+
+## 编辑器
+1. 印象笔记 (免费)
+
+    笔记软件，需要付费账户才能使用全部高级功能。
+
+2. Atom
+
+    GitHub自家推出的极简笔记软件，我心目中最好用的文本编辑器，用来做日常的记录，项目记录管理非常合适。支持语法高亮，git嵌入，各种插件支持。(其实他只是个文本编辑器)
+
+3. Sublime Text
+
+    文本编辑器，主要用来写前端代码。
+
+4. Microsoft Excel
+
+    制作Excel表格
+
+5. Microsoft PowerPoint
+
+    制作PPT文档
+
+6. Microsoft Word
+
+    制作Word文件
+
+7. MWeb (付费)
+
+    我挑选的最好用的MarkDown文本编辑器，支持Markdown语法格式，实时预览，iCloud同步。这边文章就是用这个MWeb 编辑的Markdown文本。
+
+8. Notability (付费)
+
+    笔记软件。
+
+9. Ulysses
+
+    简单的文本编辑器。
 
 ## 常用插件
 1. WeChatPlugin-MacOS ([下载地址](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS))
