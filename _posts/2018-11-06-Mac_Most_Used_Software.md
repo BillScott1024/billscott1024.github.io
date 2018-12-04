@@ -10,6 +10,9 @@ music-id: 1293951677
 
 ![Mac](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20181106115306.png)
 
+<a href="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20181106115306.png" id="id">
+     <img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20181106115306.png">
+   </a>
 -------
 &emsp;
 # 1. 软件列表
