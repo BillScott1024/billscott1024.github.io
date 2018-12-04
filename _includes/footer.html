@@ -119,7 +119,7 @@
     <script>
         // 给图片添加链接
         $(document).ready(function() {
-            $("p img").each(function() {
+            $("p image").each(function() {
                 var strA = "<a id='yourid' href='" + this.src + "'></a>";
                 $(this).wrapAll(strA);
             });
@@ -132,12 +132,10 @@
                                   fitToView : true,
                                   width   : '70%',
                                   height    : '70%',
-                                  autoSize  : false,
-                                  closeClick  : false,
-                                  openEffect  : 'none',
-                                  closeEffect : 'none'
-                                  openEffect  : 'none',
-                                  closeEffect : 'none'
+                                  autoSize  : true,
+                                  closeClick  : true,
+                                  openEffect  : 'elastic',
+                                  closeEffect : 'elastic'
                               });
     </script>
 
