@@ -79,6 +79,7 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
           </div> -->
+
           <div>
             <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
@@ -111,6 +112,27 @@
         <div style="width:300px;margin:0 auto; padding:20px 0;">
   <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102002596" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/images/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px -10px; color:#939393;">鄂公网安备 42011102002596号</p></a>
 </div>
+
+<div>
+   <script src="/theme/fancybox/lib/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script>
+        // 给图片添加链接
+        $(document).ready(function() {
+            $("p img").each(function() {
+                var strA = "<a id='yourid' href='" + this.src + "'></a>";
+                $(this).wrapAll(strA);
+            });
+        });
+    
+        // fancybox
+        $("#yourid").fancybox({
+                                  openEffect    : 'elastic',
+                                  closeEffect   : 'elastic',
+                              });
+    </script>
+    
+</div>>
 
           
     </footer>
