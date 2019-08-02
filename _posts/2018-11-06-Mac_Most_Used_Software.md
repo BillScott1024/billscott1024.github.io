@@ -60,6 +60,7 @@ music-id: 1293951677
 12. Visual Studio Code
 13. Visual Studio
 14. Xcode
+15. Beyond Compare
 
 &emsp;
 
@@ -124,7 +125,7 @@ music-id: 1293951677
 &emsp;
 
 ## 游戏
-1. 多宝 (免费)
+1. 多宝 (免费游戏平台)
 2. 英雄联盟
 3. Call of Duty 4 - Modern Warfare
 4. Dont Starve
@@ -208,6 +209,28 @@ music-id: 1293951677
 4. Lonlife  ([下载地址](https://www.lonlife.cc/))
 
     玲珑加速器，外服游戏加速器，延迟低，效果好，售后服务好，需要付费购买账户，不过有免费试用时间。
+    
+    
+## 开发
+1.Beyond Compare
+    Beyond Compare 是一款强大专业的文件和文件夹对比工具。使用它可以很方便地比较出两个文件或文件夹的差异，相差的每一个字节用颜色加以标识，让您查看方便，支持众多种格式的对比。
+只需使用简单操作方式方可开启快捷省事的文件对比体验，找出您所需差异、合并变化，然后同步文件，并生成报告一气呵成。
+打开软件后的主界面：
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20190802152357.png)
+
+当我们需要对比两个文件夹的内容时，显示如下界面：
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20190802153228.png)
+把我们需要对比的两个文件夹分别拖入左右两边，点击文件夹对比，双击文件夹可以展开文件夹，双击文件可以进入文件，查看文件内容，并进行左右文件的对比：
+![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20190802152918.png)
+其中
+* <font color=#ff0000>红色</font> 和 <font color=#808080>灰色</font>显示的左右相同的部分，<font color=#800080>紫色</font>文字的显示的左右不同的部分；
+* 点击上方状态栏的差别![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20190802154120.png?x-oss-process=image/resize,w_50) 和 相同![](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20190802154336.png?x-oss-process=image/resize,w_50)，可以分别查看对比的两个文件的有差别和相同的部分。
+
+
+
+
+
+
 
 ## 编辑器
 1. 印象笔记 (免费)
