@@ -37,21 +37,29 @@ music-id: 1373225817
 `
 将该分支的本不应该提交的commit撤销
 git reset HEAD^
+
 按需选择想要回到哪个版本
 回到HEAD
 git reset --soft HEAD
+
 回到HEAD的前一个版本
 git reset --soft HEAD^
+
 回到HEAD的前10个版本
 git reset --soft HEAD~5 
+
 利用id回到指定版本
 git reset --soft a06ef2f
+
 将撤销的代码暂存起来
 git stash
+
 切换到正确的分支
 git checkout feat/xxx
+
 重新应用缓存 
 git stash pop
+
 在正确的分支进行提交操作
 git add . && git commit -m "update xxxx"
 `
