@@ -34,7 +34,7 @@ music-id: 1373225817
 # Git 常见误操作及解决方式
 **1. 多个分支一起开发的时候将A分支的改动错误的提交到B的场景：**
 
-`
+```
 将该分支的本不应该提交的commit撤销
 git reset HEAD^
 
@@ -62,5 +62,6 @@ git stash pop
 
 在正确的分支进行提交操作
 git add . && git commit -m "update xxxx"
-`
+```
+
 
