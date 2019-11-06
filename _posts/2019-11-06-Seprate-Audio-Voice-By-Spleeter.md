@@ -3,7 +3,7 @@ layout: post
 title: 分离歌曲音频中的人声和背景音乐
 date: 2019-11-06
 tags: 工具
-music-id: 496869422
+music-id: 536622304
 ---
 
 # 从一首歌中分离人声和BGM(背景音乐)
