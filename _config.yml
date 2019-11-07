@@ -71,7 +71,7 @@ paginate_path: "page/:num/"
 # 开启kramdown
 markdown: kramdown
 
-SimpleJekyllSearch({
+SimpleJekyllSearch: 
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
@@ -79,6 +79,5 @@ SimpleJekyllSearch({
     noResultsText: '没有搜索到文章', // 无搜索数据提示语
     limit: 20, // 返回最大文章数
     fuzzy: false // 是否模糊匹配
-})
 
 
