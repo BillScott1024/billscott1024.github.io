@@ -69,8 +69,6 @@ paginate: 20
 paginate_path: "page/:num/"
 
 # 开启kramdown
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
+markdown: kramdown
 
 

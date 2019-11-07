@@ -70,6 +70,7 @@ task :post do
     post.puts "tags: #{tags}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
+    post.puts "{% include ext/toc %}"
   end
 end # task :post
 
