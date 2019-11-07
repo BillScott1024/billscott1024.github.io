@@ -4,7 +4,7 @@
 
 
         <div id="search-container">
-  <input type="text" id="search-input" placeholder="search...">
+  <input type="text" id="search-input" placeholder="搜索文章...">
   <ul id="results-container"></ul>
 </div>
 <!-- <script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script> -->
@@ -15,14 +15,14 @@ var sjs = SimpleJekyllSearch({
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
-    noResultsText: '没有搜索到文章', // 无搜索数据提示语
+    noResultsText: '没有搜索到文章哦~', // 无搜索数据提示语
     limit: 20, // 返回最大文章数
-    fuzzy: false // 是否模糊匹配
+    fuzzy: true // 是否模糊匹配
 })
 sjs.search();
 </script>
 
-    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__inner panel-inverted" style="display: block">
     <div class="panel-main__content">
         <!-- 头像效果-start -->
         <!-- ih-item circle effect right_to_left -->
