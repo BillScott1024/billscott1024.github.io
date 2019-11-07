@@ -297,6 +297,7 @@ right: 0;
 }
 
 #search-input {
+    display: block;
     width: 90%;
     height: 35px;
     color: #333;
