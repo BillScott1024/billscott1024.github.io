@@ -298,6 +298,7 @@ right: 0;
 
 #search-input {
     display: block;
+    margin: 0 auto;
     width: 90%;
     height: 35px;
     color: #333;
