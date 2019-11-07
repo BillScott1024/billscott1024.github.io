@@ -43,7 +43,7 @@ GitHub项目地址：[Spleeter人声分离](https://github.com/deezer/spleeter)
 3. 使用Conda命令运行Spleeter完成人声音频分离
 
 
-##详细安装步骤
+## 详细安装步骤
 > 这里只以MacOS为例，Windows的步骤大同小异，有问题可以留言。
 
 1. 在Conda的官网上下载自己计算机对应版本的Conda安装程序，或者包管理器进行安装，Conda官网地址点击这里[Conda](https://docs.conda.io/en/latest/conda.html)，或者点击这里的下载页进行下载：[Miniconda下载地址](https://docs.conda.io/en/latest/miniconda.html)
