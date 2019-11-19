@@ -5,6 +5,9 @@ date: 2019-09-20
 tags: 算法
 music-id: 496869422
 --- 
+*  目录
+{:toc}
+
 
 # 洗牌算法/Fisher-Yates Shuffle
 ### 洗牌算法
