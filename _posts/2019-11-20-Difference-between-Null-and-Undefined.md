@@ -88,6 +88,7 @@ if(1 === undefined){    // true
 
 确保万无一失的方法是使用void操作符：
 > The void operator evaluates the given expression and then returns undefined.
+> 
 > void 运算符 对给定的表达式进行求值，然后返回 undefined
 
 
