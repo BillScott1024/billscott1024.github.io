@@ -90,6 +90,7 @@ if(1 === undefined){    // true
 > The void operator evaluates the given expression and then returns undefined.
 > void 运算符 对给定的表达式进行求值，然后返回 undefined
 
+
 ```
 var data;
 console.log(data === void 0); //true
@@ -114,6 +115,7 @@ if(data === null){  // true
 ## null和undefined的不同用法
 ### null的用法
 * 当声明一个即将保存对象的变量，但还没有赋值时，应当初始化为null；
+
 * 当一个对象不再使用的时候，应该赋值为null，以“解除引用”，以便垃圾回收器，在下一个垃圾回收周期回收这个对象（并不会立即释放对象所占的内存）；
 
 
