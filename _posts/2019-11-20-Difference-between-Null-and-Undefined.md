@@ -8,7 +8,6 @@ music-id: 829845
 
 *  目录
 {:toc}
-
 -------
 
 ![Null&Undefined](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/bg2014032801.png)
@@ -37,6 +36,7 @@ undefined == null
 
 ## null和undefined的区别
 ### null表示“没有对象”，即该处不应该有值：
+
 1. 作为函数的参数，表示该函数的参数不是对象。
 2. 作为对象原型链的终点。
 
@@ -55,7 +55,7 @@ Object.getPrototypeOf(Object.prototype)
 例子： 
 
 
-```
+```js
 var i; i   // undefined
 
 function f(x){
@@ -98,6 +98,7 @@ console.log(data === void 0); //true
 ```
 
 ### null判断
+
 当使用typeof null的时候，返回值会是一个“object”，从逻辑角度来看，null值表示一个空对象指针，它代表的其实就是一个**空对象**，所以使用typeof操作符检测时返回"object"也是可以理解的：
 
 ```
@@ -107,14 +108,16 @@ console.log(typeof data); // "object"
 
 正确的判断方法是使用严格相等操作符 === ：
 
-```
+```javascript
 if(data === null){  // true
        console.log("data中没有保存对象引用！");
    }
 ```
 
 ## null和undefined的不同用法
+
 ### null的用法
+
 * 当声明一个即将保存对象的变量，但还没有赋值时，应当初始化为null；
 
 * 当一个对象不再使用的时候，应该赋值为null，以“解除引用”，以便垃圾回收器，在下一个垃圾回收周期回收这个对象（并不会立即释放对象所占的内存）；
