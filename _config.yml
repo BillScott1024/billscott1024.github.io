@@ -70,8 +70,5 @@ paginate_path: "page/:num/"
 
 # 开启kramdown
 markdown: kramdown
-   kramdown:
-       input: GFM
-       hard_wrap: true
 
 
