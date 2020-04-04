@@ -44,6 +44,11 @@ title: 关于我
 
 <p>
 
+
+<p3> 友情链接 </p3>
+
+<a target="_blank" href="http://www.jingfengji.tech/"> JingFengJi </a>
+
 <!-- <p>本博客已发表文章总字数{% assign count = 0 %}
 {% for post in site.posts %}
     {% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
