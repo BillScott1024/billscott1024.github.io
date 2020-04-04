@@ -1538,4 +1538,13 @@ nav a {
   -moz-transform: translateY(-3px);
   transform: translateY(-3px);
 }
+
+html {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
 /*导航按钮-end*/
