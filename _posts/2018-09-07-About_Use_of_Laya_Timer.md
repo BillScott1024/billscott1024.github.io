@@ -6,6 +6,9 @@ tags: LayaBox
 music-id: 533455199
 --- 
 
+*  目录
+{:toc}
+
 # Laya中Timer的类
 
 ### 1.官方文档 [Laya.Timer](https://layaair.ldc.layabox.com/api/?category=Core&class=laya.utils.Timer)

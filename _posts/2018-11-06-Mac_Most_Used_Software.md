@@ -8,6 +8,10 @@ music-id: 1293951677
 
 -------
 
+*  目录
+{:toc}
+
+
 <a href="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20181106115306.png" id="id">
      <img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20181106115306.png">
 </a>
@@ -34,6 +38,7 @@ music-id: 1293951677
 14. TeamViewer (免费)
 15. Tuxera Disk Manager (付费)
 16. iMazing (付费)
+17. Rotato for mac(3D样机宣传视频制作软件)
 
 &emsp;
 
@@ -185,14 +190,17 @@ music-id: 1293951677
 13. Parallels Desktop
 
     Mac系统上最强大的虚拟机，可以在Mac上高性能运行Windows，Linux等系统，用来运行一些Windows独有的软件，游戏等都没有问题。强烈推荐。
-14. Tuxera Disk Manager (付费)
+14. TeamView
+    一款远程控制软件，支持Windows，Mac，iOS, Android多平台。
+15. Tuxera Disk Manager (付费)
 
-    用于在Mac系统上读取的磁盘格式是NTFS(Windows系统文件格式)的硬盘。由于NTFS是Windows独有的文件格式，而Mac系统屏蔽了此格式的写入，只能通过另外的软件来读写。也可以通过将磁盘格式化为FAT32格式的文件格式，可以同时在Mac和Windows中读写文件，但是FAT32格式的文件系统并不支持单个文件大于4GB的存储，所以对于有大文件存储需求的用户来说，Tuxera Disk Manager是最好的选择。
-15. iMazing
+    用于在Mac系统上读取的磁盘格式是NTFS(Windows系统文件格式)的硬盘。由于NTFS是Windows独有的文件格式，而Mac系统屏蔽了此格式的写入，只能通过另外的软件来读写。也可以通过将磁盘格式化为FAT32格式的文件格式，可以同时在Mac和Windows中读写文件，但是FAT32格式的文件系统并不支持单个文件大于4GB的存储，所以对于有大文件存储需求的用户来说，Tuxera Disk Manager是最好的选择。 
+16. iMazing
 
-    Mac上比iTunes更好用的iPhone管理工具，可以用来备份，管理iPhone的照片，视频，文件等。
-
-
+    Mac上比iTunes更好用的iPhone管理工具，可以用来备份，管理iPhone的照片，视频，文件等。   
+17. Rotato for mac(3D样机宣传视频制作软件)
+    如图所示的3D样机展示工具，下载地址：[Mac下载-Rotato](https://www.macdown.com/mac/6521.html)
+![Roato Demo](https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/Rotato Snapshot1.png)
 ## 网络
 1. ShadowsocksX-NG-R8 (免费) ([下载地址](https://github.com/shadowsocks/ShadowsocksX-NG))
 
