@@ -200,13 +200,6 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
-    <lastmod>2020-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/tags/JavaScript/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
@@ -214,7 +207,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/Mac/</loc>
+    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -222,6 +215,13 @@
   
   <url>
     <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
+    <lastmod>2020-08-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/tags/Mac/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -272,13 +272,6 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
-    <lastmod>2020-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/categories/JavaScript/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
@@ -286,7 +279,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -294,6 +287,13 @@
   
   <url>
     <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
+    <lastmod>2020-08-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2020-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
