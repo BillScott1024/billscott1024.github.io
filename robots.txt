@@ -1,0 +1,6 @@
+# robots.txt generated at http://tool.chinaz.com/robots/
+User-agent: *
+Disallow:
+Disallow: /bin/
+Sitemap: https://www.extingstudio.com/sitemap.xml
+Sitemap: https://www.extingstudio.com/baidusitemap.xml
