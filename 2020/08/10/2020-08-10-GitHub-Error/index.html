@@ -1,0 +1,428 @@
+<!DOCTYPE html><html><head hexo-theme="https://github.com/volantis-x/hexo-theme-volantis/tree/3.0.0"><meta charset="utf-8"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法 - 忆星辰</title><meta name="keywords" content="Git"><meta name="description" content="记录一次遇到在GitHub上使用Git命令Pull仓库遇到的“疑难杂症”。"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css"><link rel="shortcut icon" type="image/x-icon" href="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/avatar/favicon-cicle.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"><link rel="stylesheet" href="/css/style.css"><script>setTimeout(function(){window.ga_tid="UA-124641144-1",function(){var e=document.createElement("script");e.src="https://rmt.dogedoge.com/fetch/public/ga.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()},5e3)</script><script>var _hmt=_hmt||[];setTimeout(function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?e98a157d14b712d66463073d921b0253",e.defer=!0;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)},5e3)</script></head><body><header class="l_header auto shadow blur" style="opacity:0"><div class="container"><div class="wrapper"><div class="nav-sub"><p class="title"></p><ul class="switcher nav-list-h m-phone" id="pjax-header-nav-list"><li><a class="s-comment fas fa-comments fa-fw" target="_self" href="javascript:void(0)"></a></li><li><a class="s-toc fas fa-list fa-fw" target="_self" href="javascript:void(0)"></a></li></ul></div><div class="nav-main"><a class="title flat-box" target="_self" href="/"><img no-lazy class="logo" src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/avatar/favicon-cicle.png"> <i class="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/avatar/favicon-cicle.png"></i></a><div class="menu navigation"><ul class="nav-list-h m-pc"><li><a class="menuitem flat-box faa-parent animated-hover" href="/" id="home"><i class="fas fa-rss fa-fw"></i>博客</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/archives/" id="archives"><i class="fas fa-archive fa-fw"></i>归档</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/tags/" id="tags"><i class="fas fa-tags fa-fw"></i>标签</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/" id="categories"><i class="fas fa-folder-open fa-fw"></i>分类</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/friends/" id="friends"><i class="fas fa-link fa-fw"></i>友链</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/shuoshuo/" id="shuoshuo"><i class="fas fa-comments fa-fw"></i>说说</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/about/" id="about"><i class="fas fa-info-circle fa-fw"></i>关于</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/tools/" id="tools"><i class="fas fa-tools fa-fw"></i>工具箱</a></li><li><a class="menuitem flat-box faa-parent animated-hover"><i class="fas fa-ellipsis-v fa-fw"></i>更多</a><ul class="list-v"><li><a class="menuitem flat-box faa-parent animated-hover" href="/comments/" id="comments"><i class="fas fa-file-signature fa-fw"></i>留言板</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/bangumis/index.html" id="bangumisindexhtml"><i class="fas fa-tv fa-fw"></i>番剧</a></li></ul></li></ul></div><div class="m_search"><form name="searchform" class="form u-search-form"><i class="icon fas fa-search fa-fw"></i> <input type="text" class="input u-search-input" placeholder="Search..."></form></div><ul class="switcher nav-list-h m-phone"><li><a class="s-search fas fa-search fa-fw" target="_self" href="javascript:void(0)"></a></li><li><a class="s-menu fas fa-bars fa-fw" target="_self" href="javascript:void(0)"></a><ul class="menu-phone list-v navigation white-box"><li><a class="menuitem flat-box faa-parent animated-hover" href="/" id="home"><i class="fas fa-rss fa-fw"></i>博客</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/archives/" id="archives"><i class="fas fa-archive fa-fw"></i>归档</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/tags/" id="tags"><i class="fas fa-tags fa-fw"></i>标签</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/" id="categories"><i class="fas fa-folder-open fa-fw"></i>分类</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/friends/" id="friends"><i class="fas fa-link fa-fw"></i>友链</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/shuoshuo/" id="shuoshuo"><i class="fas fa-comments fa-fw"></i>说说</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/about/" id="about"><i class="fas fa-info-circle fa-fw"></i>关于</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/tools/" id="tools"><i class="fas fa-tools fa-fw"></i>工具箱</a></li><li><a class="menuitem flat-box faa-parent animated-hover"><i class="fas fa-ellipsis-v fa-fw"></i>更多</a><ul class="list-v"><li><a class="menuitem flat-box faa-parent animated-hover" href="/comments/" id="comments"><i class="fas fa-file-signature fa-fw"></i>留言板</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/bangumis/index.html" id="bangumisindexhtml"><i class="fas fa-tv fa-fw"></i>番剧</a></li></ul></li></ul></li></ul></div></div></div></header><div class="l_body"><div class="l_cover"><div class="cover-wrapper post dock" style="display:none"><div class="cover-backstretch"></div><div class="cover-body"><div class="top"><img no-lazy class="logo" src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/avatar/favicon-cicle.png"></div><div class="bottom"><div class="menu navigation"><div class="list-h"><a href="/" id="home"><i class="fas fa-book fa-fw"></i><p>博客</p></a><a href="/archives/" id="archives"><i class="fas fa-archive fa-fw"></i><p>归档</p></a><a href="/tags/" id="tags"><i class="fas fa-tags fa-fw"></i><p>标签</p></a><a href="/friends/" id="friends"><i class="fas fa-link fa-fw"></i><p>友链</p></a><a href="/shuoshuo/" id="shuoshuo"><i class="fas fa-comments fa-fw"></i><p>说说</p></a><a href="/about/" id="about"><i class="fas fa-info-circle fa-fw"></i><p>关于</p></a></div></div></div></div><div class="scroll-down" style="display:none"><i class="fa fa-chevron-down scroll-down-effects"></i></div></div></div><div class="safearea"><div class="body-wrapper" id="pjax-container"><div id="pjax-data" style="display:none"><div id="pjax-ispage">true</div><div id="pjax-pageTitle">在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法</div><div id="pjax-enable-cover">true</div><div id="pjax-comment-path">none</div><div id="pjax-comment-placeholder">none</div></div><script>document.getElementsByClassName("cover-wrapper")[0].style.display="none",document.getElementsByClassName("l_header","cover-wrapper")[0].classList.add("show")</script><div class="l_main"><article id="post" class="post white-box reveal md shadow article-type-post" itemscope itemprop="blogPost"><div class="article-header"><div class="article-meta" id="top"><a title="在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法" href="/2020/08/10/2020-08-10-GitHub-Error/"><img class="thumbnail lazyload placeholder" src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png"></a><h1 class="title"><a href="/2020/08/10/2020-08-10-GitHub-Error/">在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法</a></h1><div class="new-meta-box"><div class="new-meta-item author"><a class="author" href="/" rel="nofollow"><img no-lazy src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/avatar/avatar.jpg"><p>Akimoto</p></a></div><div class="new-meta-item category"><a class="notlink"><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i> <a class="category-link" href="/categories/Git/">Git</a></a></div><div class="new-meta-item date"><a class="notlink"><i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i><p>发布于：2020年8月10日</p></a></div><div class="new-meta-item wordcount"><a class="notlink"><i class="fas fa-keyboard fa-fw" aria-hidden="true"></i><p>字数：650字</p></a></div><div class="new-meta-item readtime"><a class="notlink"><i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i><p>时长：2分钟</p></a></div><div class="new-meta-item browse leancloud"><a class="notlink"><div id="lc-pv" data-title="在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法" data-path="/2020/08/10/2020-08-10-GitHub-Error/"><i class="fas fa-eye fa-fw" aria-hidden="true"></i> <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次阅读</div></a></div></div></div></div><section class="article typo"><div class="article-entry" itemprop="articleBody"><hr><p><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/what-is-github-1-1.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/what-is-github-1-1.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="GitHub"></p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>记录一次遇到在GitHub上使用Git命令Pull仓库遇到的“疑难杂症”。</p></blockquote><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>起因是我写了一个Cocos Creator的通用的组件代码，想在GitHub上的个人仓库中保存下来，方便分享给他人，也以便今后自己用到方便查看，于是在GitHub上新建了一个公开的仓库，地址是：<a target="_blank" rel="noopener" href="https://github.com/BillScott1024/RichTextTypingDemo">RichTextTypingDemo</a>， 然后在本地使用SourceTree去拉取Git仓库到本地，但是一直在加载，过一会儿就出现报错：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-01"><br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810164404.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810164404.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-02"><br>点开报错信息后显示：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810164446.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810164446.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-03"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ssh_exchange_identification: read: Operation timed out</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">fatal: not a git repository (or any of the parent directories): .git</span><br><span class="line">ssh_exchange_identification: read: Operation timed out</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">ssh_exchange_identification: read: Operation timed out</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>使用Git命令报错：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810170612.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810170612.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-04"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase</span><br><span class="line">ssh_exchange_identification: read: Operation timed out</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br></pre></td></tr></table></figure><h1 id="解决过程"><a href="#解决过程" class="headerlink" title="解决过程"></a>解决过程</h1><ol><li><p>我开始以为是我的GitHub的权限问题，或者是我的SSH 私钥Key过期了，因为我看到报错信息里有：<code>Please make sure you have the correct access rights</code> 于是删除了本地的SSH Key，并重新生成私钥，保存到GitHub的后台上，但重试后问题依旧。排除权限问题。</p></li><li><p>然后我怀疑的原因是可能是我的梯子有问题，导致我的SourceTree无法链接GitHub的仓库，于是我打开Chrome进GitHub，连接正常，打开关闭ClashX Pro都可以正常进入GitHub主页，但是有可能是浏览器可以正常进去，但是命令行无法进入，我打开iTerm Ping了一下GitHub.com，果然无法Ping通,全都超时了：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165338.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165338.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-05"><br>于是我把ClashX Pro提供的命令行翻♂墙命令<code>export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890</code>， 复制到iTerm中，依然无法Ping通，百度是可以正常Ping通的，排除WiFi网络问题:<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165523.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165523.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-06"></p></li><li><p>网上搜索了一番，没有找到解决问题的方法。但我突然想起来，我之前改过一次GitHub的Host，有可能是这个原因导致的于是找到Mac的Host文件，删除GitHub的Host：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165855.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810165855.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-07"><br>Binggo！解决问题,代码仓库可以正常Pull和Push了：<br><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810170048.png" class="lazyload placeholder" data-srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/20200810170048.png" srcset="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/icon/img-loading-bilibili.gif" alt="img-08"></p></li></ol><p>当初改这个Host的原因是我的GitHub和WIki上所有的用户头像和图标都无法加载，显示裂开，在网上找到的修改Host的方法解决的，现在删掉这条Host好像也没有问题了。</p><p>到此，问题解决完毕。</p><div class="footer"><div class="copyright"><blockquote><p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p><p>本文永久链接是：<a href="https://www.extingstudio.com/2020/08/10/2020-08-10-GitHub-Error/">https://www.extingstudio.com/2020/08/10/2020-08-10-GitHub-Error/</a></p></blockquote></div><div class="donate"><div class="imgs"><img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/pay/weipayimg.jpg"> <img src="https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/pay/alipayimg.jpg"></div></div></div></div><div class="article-meta" id="bottom"><div class="new-meta-box"><div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-08-25T15:42:10+08:00"><a class="notlink"><i class="fas fa-edit fa-fw" aria-hidden="true"></i><p>更新于：2020年8月25日</p></a></div><div class="new-meta-item meta-tags"><a class="tag" href="/tags/Git/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Git</p></a></div><div class="new-meta-item share -mob-share-list"><div class="-mob-share-list share-body"><div class="hoverbox"><a class="share"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png"></a><div class="target"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADtElEQVR42u3aQZLbMAwEwP3/p5N7UilhANhGdps3lyWRbPowBvT1y2iNLwTgwIEDZ4ADdwTuqzn+vP/p89Nz/lpgcb7qfWv7BQcOHDhw4MCBOwZXDoAPMNX7UqCn67oHG+8XHDhw4MCBAwfuKNzWQtIgOj2gasAe7xccOHDgwIEDB+6bwE2DZnW+boDuFlrBgQMHDhw4cOC+O1x3wWmA7h4YOHDgwIEDBw7cT4FLG7Td69J5U/DznXxw4MCBAwcOHLgluHRsB9B3f27vFxw4cODAgQMH7gjcu8Z0A9uF0vY+wIEDBw4cOHDgjsClDeFqo3i6gWohND2Q7oGCAwcOHDhw4MBdhUsDZ3Xj00JoGqi3YP8JDQ4cOHDgwIEDdwwuDZgp3HbAbm88DPDjfw7gwIEDBw4cOHAvgusGzClUCthtgG+tBxw4cODAgQMH7jpcWthMC4Npg7jbuH7V88GBAwcOHDhw4K7BxQW95c9pkN0K0mnQBgcOHDhw4MCBuwJXfSGvusA0iFbnjze4FMzLnXxw4MCBAwcOHLgPw00DYjegToNv+kNoXwcOHDhw4MCBA3cULg2+2xtOC57dYNxuyIMDBw4cOHDgwB2B6y58WhBMRxVoOv/j88GBAwcOHDhw4I7BbS08vW/6QmAKkM73GIDBgQMHDhw4cOA+BPeqF/jahcIQbFpYTQ8AHDhw4MCBAwfuCtxWcJweRLeQmja204MuFzLBgQMHDhw4cOA+BJe+CNgNrGlBsbvhrcY6OHDgwIEDBw7cdbithnS3AJoCTKG7wR0cOHDgwIEDB+4aXDrRVkM6he8WILvw5X8O4MCBAwcOHDhwb4brNnxT8GnQ3S6gdgM6OHDgwIEDBw7cNbjuArsBcwrRLXCmP4zHAAwOHDhw4MCBA3cErjpRN9BOIbYKlt3rwYEDBw4cOHDgrsGlC+42jtPAWT2YrQZ4HIDBgQMHDhw4cOCOwE0DZBXuVYXTbmG1vE9w4MCBAwcOHLgjcNORLjj9fgo+LbiCAwcOHDhw4MBdhZsGw/S6rWCaBuQUatzJBwcOHDhw4MCBexNcN/B2g+qrGs9pQTQOyODAgQMHDhw4cEfhtgqMW4F6CjYN0uDAgQMHDhw4cD8VbjvQdoG76wIHDhw4cODAgfuucNsFzm4j+wmqe5DgwIEDBw4cOHD/C9w0QE4LmNONdQ+0/MMBBw4cOHDgwIE7Bre14W6BcRqUq88bN7zBgQMHDhw4cOCOwBnhwSIABw4cOAMcuM+O32n+/FO3AzlfAAAAAElFTkSuQmCC"></div></div><a class="-mob-share-qq" rel="external nofollow noopener noreferrer noopener" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.extingstudio.com/2020/08/10/2020-08-10-GitHub-Error/&title=在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法 - 忆星辰&pics=https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png"> </a><a class="-mob-share-qzone" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.extingstudio.com/2020/08/10/2020-08-10-GitHub-Error/&title=在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法 - 忆星辰&pics=https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png"> </a><a class="-mob-share-weibo" rel="external nofollow noopener noreferrer noopener" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.extingstudio.com/2020/08/10/2020-08-10-GitHub-Error/&title=在GitHub仓库使用Git命令 遇到ssh_exchange_identification错误的解决办法 - 忆星辰&pics=https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/QQ20200810-164246.png&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png"></a></div></div></div></div><div class="prev-next"><a class="next" href="/2019/11/23/2019-11-23-Closure-in-JavaScript/"><p class="title">JavaScript深入浅出之理解闭包<i class="fas fa-chevron-right" aria-hidden="true"></i></p><p class="content">前言 函数与对其状态即词法环境（lexical environment）的引用共同构成闭包（closure）。也就是说，闭包可以让你从内部函数访问外部函数作用域。在JavaScript，函...</p></a></div></section></article><article class="post white-box reveal comments shadow"><section class="article typo"><p ct><i class="fas fa-comments"></i> 评论</p><section id="comments"><div id="valine_container" class="valine_thread"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div></section></section></article></div><aside class="l_side"><section class="widget toc-wrapper shadow desktop mobile" id="toc-div"><header><i class="fas fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span></header><div class="content"></div></section></aside></div><footer class="footer clearfix"><br><br><div class="aplayer-container"><meting-js theme="#1BCDFC" autoplay volume="0.5" loop order="random" fixed="true" list-max-height="320px" server="netease" type="playlist" id="3136952023" list-folded="true"></meting-js></div><br><div class="social-wrapper"><a href="/atom.xml" class="social fas fa-rss flat-btn" target="_blank" rel="external nofollow noopener noreferrer"></a> <a href="mailto:jaxsonwang@foxmail.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external nofollow noopener noreferrer"></a> <a href="https://github.com/BillScott1024/" class="social fab fa-github flat-btn" target="_blank" rel="external nofollow noopener noreferrer"></a> <a href="https://music.163.com/#/user/home?id=63035382" class="social fas fa-headphones-alt flat-btn" target="_blank" rel="external nofollow noopener noreferrer"></a></div><div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p></div><div><p><span id="lc-sv">本站总访问量为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id="number"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p></div>本站使用 <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/3.0.0" target="_blank" class="codename">Volantis</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次<div class="copyright"><p><a href="/">Copyright © 2017-2020 XXX</a></p></div><div><div style="width:300px;margin:0 auto;padding:20px 0"><a style="display:inline-block;text-decoration:none;height:20px;line-height:20px"><img src="/images/beian.png" style="float:left"><p style="float:left;height:20px;line-height:20px;margin:0;color:#939393">鄂公网安备 42011102002596号</p></a></div></div><div><p><img src="https://img.shields.io/badge/Powered-Hexo-blue" style="float:center"> <a target="_blank" rel="noopener" href="https://github.com/BillScott1024/billscott1024.github.io"><img src="https://img.shields.io/badge/Hosted-GitHub-brightgreen" style="float:center"> </a><a target="_blank" rel="noopener" href="https://www.aliyun.com/"><img src="https://img.shields.io/badge/DNS-%E9%98%BF%E9%87%8C%E4%BA%91-orange" style="float:center"> </a><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-JsDelivr-blueviolet" style="float:center"> </a><a target="_blank" rel="noopener" href="https://volantis.js.org/"><img src="https://img.shields.io/badge/Theme-Volantis-blue" style="float:center"> </a><a target="_blank" rel="noopener" href="https://volantis.js.org/"><img src="https://img.shields.io/badge/Theme-Volantis-blue" style="float:center"></a></p></div></footer><a class="s-top fas fa-arrow-up fa-fw" href="javascript:void(0)"></a></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script><script type="text/javascript">$(function(){var o=["https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-001.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-002.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-003.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-004.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-005.png","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-006.png","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-007.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-008.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-009.png","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-010.png","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-011.png","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-012.jpg","https://es-blogimg.oss-cn-hangzhou.aliyuncs.com/img/background/cover-013.png"];!function(o){for(var g=o.length;g--;){var c=Math.floor(Math.random()*g),s=o[c];o[c]=o[g],o[g]=s}}(o),$(".cover-backstretch").backstretch(o,{duration:"10000",fade:"1500"})})</script><script>var SEARCH_SERVICE="hexo",ROOT="/";ROOT.endsWith("/")||(ROOT+="/")</script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script><script>window.lazyLoadOptions={elements_selector:".lazyload",threshold:0},window.addEventListener("LazyLoad::Initialized",function(n){window.lazyLoadInstance=n.detail.instance},!1),document.addEventListener("DOMContentLoaded",function(){lazyLoadInstance.update()}),document.addEventListener("pjax:complete",function(){lazyLoadInstance.update()})</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script>function pjax_fancybox(){$(".md").find("img").not(".inline").not("a img").each(function(){var t=document.createElement("a");$(t).attr("class","fancybox"),$(t).attr("pjax-fancybox",""),$(t).attr("href",$(this).attr("src")),$(this).attr("data-original")&&$(t).attr("href",$(this).attr("data-original")),$(t).attr("data-fancybox","images");var a="";$(this).attr("alt")&&($(t).attr("data-caption",$(this).attr("alt")),a=$(this).attr("alt"));var e=document.createElement("div");$(e).addClass("fancybox"),$(this).wrap(e);var r=document.createElement("span");$(r).addClass("image-caption"),$(r).text(a),$(this).after(r);var i=document.createElement("div");$(i).addClass("bg"),$(this).attr("bg")&&$(i).css("background",$(this).attr("bg")),$(this).wrap(i),$(this).wrap(t)}),$(".article-entry").find("img").fancybox({selector:'[data-fancybox="images"]',hash:!1,loop:!1,closeClick:!0,helpers:{overlay:{closeClick:!0}},buttons:["zoom","close"]})}$(function(){pjax_fancybox()})</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script><script>var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });</script><script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script><script type="text/javascript">function pjax_scrollrebeal(){ScrollReveal().reveal(".l_main .reveal",{distance:"32px",duration:"800",interval:"20",scale:"1",easing:"ease-out"})}$(function(){pjax_scrollrebeal()})</script><script>let APlayerController = new Object();
+  APlayerController.id = '3136952023';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.5';</script><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script><script src="/js/valine.js"></script><script>var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+    let pageUrl = $.trim($('#pjax-comment-path').text()) === "none" ? 
+      decodeURI(window.location.pathname) : $.trim($('#pjax-comment-path').text());
+    let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) === "none" ?
+      "粘贴图片到此处可以自动上传，请填写邮箱以收到及时回复哦~" : $.trim($('#pjax-comment-placeholder').text());
+
+    let ALLPATH = '';
+    if(ALLPATH != '') pageUrl = ALLPATH;
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: pageUrl,
+      appId: "p9EoaNrAJAtz2IlbAp0sRau5-gzGzoHsz",
+      appKey: "u1u31xRPwMb606uCUaaCaV3A",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });</script><script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script><script type="text/javascript">function getClientHeight(){var e=0;if(document.body.clientHeight&&document.documentElement.clientHeight)e=document.body.clientHeight<document.documentElement.clientHeight?document.body.clientHeight:document.documentElement.clientHeight;else e=document.body.clientHeight>document.documentElement.clientHeight?document.body.clientHeight:document.documentElement.clientHeight;return e}function supportCss3(e){var t,o=["webkit","Moz","ms","o"],n=[],d=document.documentElement.style,i=function(e){return e.replace(/-(\w)/g,function(e,t){return t.toUpperCase()})};for(t in o)n.push(i(o[t]+"-"+e));for(t in n.push(i(e)),n)if(n[t]in d)return!0;return!1}var options={bottom:"32px",right:"unset",left:"16px",time:"0s",mixColor:"#f4f4f4",backgroundColor:"#f4f4f4",buttonColorDark:"#bbb",buttonColorLight:"#444",saveInCookies:!0,label:"🌓",autoMatchOsTheme:!0};function pjax_darkmodejs(){if(supportCss3("mix-blend-mode"))var e=setInterval(function(){if("undefined"!=typeof jQuery){clearInterval(e);var t=getClientHeight();$(window).scroll(function(){var e=$(document).scrollTop();t<e?($(".darkmode-layer").css("mix-blend-mode","normal"),$(".darkmode-layer").css("background-color","#222")):($(".darkmode-layer").css("mix-blend-mode","difference"),$(".darkmode-layer").css("background-color",""))})}},100)}supportCss3("mix-blend-mode")&&(window.darkmode=new Darkmode(options),window.darkmode.showWidget(),pjax_darkmodejs())</script><script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script><script src="/js/app.js"></script><script src="/js/search.js"></script><script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script><script type="text/javascript">$(function(){Waves.attach(".flat-btn",["waves-button"]),Waves.attach(".float-btn",["waves-button","waves-float"]),Waves.attach(".float-btn-light",["waves-button","waves-float","waves-light"]),Waves.attach(".flat-box",["waves-block"]),Waves.attach(".float-box",["waves-block","waves-float"]),Waves.attach(".waves-image"),Waves.init()})</script><script defer>const LCCounter = {
+    app_id: 'OcH33On9kof4QnMnSaAOmDhj-MdYXbMMI',
+    app_key: 'V50w1D4JtUK9s3VxbnTtg5XJ',
+    custom_api_server: '',
+
+    // 查询存储的记录
+    getRecord(Counter, url, title) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {url, title: title, times: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    },
+
+    // 发起自增请求
+    increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    },
+
+    // 构建自增请求体
+    buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "times": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    },
+
+    // 校验是否为有效的 UV
+    validUV() {
+      var key = 'LeanCloudUVTimestamp';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    },
+
+    addCount(Counter) {
+      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
+      enableIncr = true;
+      var getterArr = [];
+      var incrArr = [];
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#lc-sv');
+      if (pvCtn || enableIncr) {
+        var pvGetter = this.getRecord(Counter, 'https://www.extingstudio.com' + '/#lc-sv', 'Visits').then((record) => {
+          incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-sv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + 1;
+              if (pvCtn) {
+                pvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#lc-uv');
+      if (uvCtn || enableIncr) {
+        var uvGetter = this.getRecord(Counter, 'https://www.extingstudio.com' + '/#lc-uv', 'Visitors').then((record) => {
+          var vuv = this.validUV();
+          vuv && incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-uv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + (vuv ? 1 : 0);
+              if (uvCtn) {
+                uvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 请求文章的浏览数，如果是当前页面就自增
+      var allPV = document.querySelectorAll('#lc-pv');
+      if (allPV.length > 0 || enableIncr) {
+        for (i = 0; i < allPV.length; i++) {
+          let pv = allPV[i];
+          let title = pv.getAttribute('data-title');
+          var url = 'https://www.extingstudio.com' + pv.getAttribute('data-path');
+          if (url) {
+            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
+              // 是当前页面就自增
+              if (pv.getAttribute('data-path') == window.location.pathname) {
+                incrArr.push(this.buildIncrement(record.objectId));
+              }
+              if (pv) {
+                var ele = pv.querySelector('#lc-pv #number');
+                if (ele) {
+                  if (pv.getAttribute('data-path') == window.location.pathname) {
+                    ele.innerText = (record.times || 0) + 1;
+                  } else {
+                    ele.innerText = record.times || 0;
+                  }
+                  pv.style.display = 'inline';
+                }
+              }
+            });
+            getterArr.push(viewGetter);
+          }
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && this.increment(Counter, incrArr);
+        })
+      }
+
+    },
+
+
+    fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': this.app_id,
+            'X-LC-Key': this.app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      this.addCount(Counter);
+    },
+
+    refreshCounter() {
+      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+      if (api_server) {
+        this.fetchData(api_server);
+      } else {
+        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
+          .then(resp => resp.json())
+          .then(({api_server}) => {
+            this.fetchData('https://' + api_server);
+          });
+      }
+    }
+
+  };
+
+  LCCounter.refreshCounter();
+
+  document.addEventListener('pjax:complete', function () {
+    LCCounter.refreshCounter();
+  });</script><!-- more --><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><div class="pjax-animate"><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed:100})</script></div><script>window.ShowLoading=function(){NProgress.start()},window.HideLoading=function(){NProgress.done()}</script></div><script>var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = ["/shuoshuo/"];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      $.fancybox.close();    // 关闭弹窗
+      $('.l_header .switcher .s-search').removeClass('active'); // 关闭移动端激活的搜索框
+      $('.l_header').removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      $('.wrapper').removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      $('.s-top').unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+      window.ShowLoading();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+      // _hmt.push(['_trackPageview', document.location.pathname]);
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('config', 'UA-124641144-1', {'page_path': document.location.pathname});
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+        pjax_fancybox();
+        
+          
+          if ('.cover-backstretch') {
+            $('.cover-backstretch').backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $('.cover-backstretch').backstretch("pause");
+            }else{
+              $('.cover-backstretch').backstretch("next");
+            }
+          } else {
+            $.backstretch("resize");
+            if($('.cover-wrapper').is(':hidden')){
+              $.backstretch("pause");
+            }else{
+              $.backstretch("next");
+            }
+          }
+        
+        
+        
+          pjax_scrollrebeal();
+        
+        
+          pjax_initCopyCode();
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+        
+          pjax_darkmodejs();
+        
+      } catch (e) {
+        console.log(e);
+      }
+      window.HideLoading();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.HideLoading();
+      window.location.href = e.triggerElement.href;
+    });</script></div><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BNKbIvI_iJuSO3IFPx6D_gSjEve8q7iuxD8qMSMRfWMq0JSx0xRSadjd-x6TX8XI537fa3c7fGsgeic-ejD6l-o');</script></body></html>
