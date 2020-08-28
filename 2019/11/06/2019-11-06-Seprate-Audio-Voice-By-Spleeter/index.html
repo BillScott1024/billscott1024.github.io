@@ -49,7 +49,7 @@
         pjax_initCopyCode()
     });</script><script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script><script type="text/javascript">function pjax_scrollrebeal(){ScrollReveal().reveal(".l_main .reveal",{distance:"32px",duration:"800",interval:"20",scale:"1",easing:"ease-out"})}$(function(){pjax_scrollrebeal()})</script><script>let APlayerController = new Object();
   APlayerController.id = '3136952023';  // 设定全局音乐播放ID
-  APlayerController.volume = '0.5';</script><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script><script src="/js/valine.js"></script><script>var GUEST_INFO = ['nick', 'mail', 'link'];
+  APlayerController.volume = '0.5';</script><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick', 'mail', 'link'];
   var meta = 'nick,mail,link'.split(',').filter(function (item) {
     return GUEST_INFO.indexOf(item) > -1
   });
@@ -86,7 +86,7 @@
     let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) === "none" ?
       "粘贴图片到此处可以自动上传，请填写邮箱以收到及时回复哦~" : $.trim($('#pjax-comment-placeholder').text());
 
-    let ALLPATH = '';
+    let ALLPATH = '/404/';
     if(ALLPATH != '') pageUrl = ALLPATH;
 
     var valine = new Valine();
@@ -106,7 +106,9 @@
       enableQQ: 'true',
       requiredFields: requiredFields,
       emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps
+      emojiMaps: emojiMaps,
+      master: '[99F30FA72C5A1DA511002A1122A78A36]',
+      friends: '[]'
     })
   }
 
@@ -311,7 +313,7 @@
 
   document.addEventListener('pjax:complete', function () {
     LCCounter.refreshCounter();
-  });</script><!-- more --><script type="text/javascript" src="https://js.users.51.la/20919671.js"></script><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279216587'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279216587%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"))</script><script>!function(e,s,p,u){if(void 0===e.webpushr){e.webpushr=e.webpushr||function(){(e.webpushr.q=e.webpushr.q||[]).push(arguments)};var r,i=s.getElementsByTagName(p)[0];(r=s.createElement(p)).id="webpushr-jssdk",r.src="https://cdn.webpushr.com/app.min.js",i.parentNode.appendChild(r)}}(window,document,"script"),webpushr("setup",{key:"BNKbIvI_iJuSO3IFPx6D_gSjEve8q7iuxD8qMSMRfWMq0JSx0xRSadjd-x6TX8XI537fa3c7fGsgeic-ejD6l-o"})</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><div class="pjax-animate"><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed:100})</script></div><script>window.ShowLoading=function(){NProgress.start()},window.HideLoading=function(){NProgress.done()}</script></div><script>var pjax;
+  });</script><!-- more --><script type="text/javascript" src="https://js.users.51.la/20919671.js"></script><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279216587'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279216587%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"))</script><script>!function(e,s,p,u){if(void 0===e.webpushr){e.webpushr=e.webpushr||function(){(e.webpushr.q=e.webpushr.q||[]).push(arguments)};var r,i=s.getElementsByTagName(p)[0];(r=s.createElement(p)).id="webpushr-jssdk",r.src="https://cdn.webpushr.com/app.min.js",i.parentNode.appendChild(r)}}(window,document,"script"),webpushr("setup",{key:"BNKbIvI_iJuSO3IFPx6D_gSjEve8q7iuxD8qMSMRfWMq0JSx0xRSadjd-x6TX8XI537fa3c7fGsgeic-ejD6l-o"})</script><script type="text/javascript" color="112, 128, 144" opacity="0.8" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><div class="pjax-animate"><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed:100})</script></div><script>window.ShowLoading=function(){NProgress.start()},window.HideLoading=function(){NProgress.done()}</script></div><script>var pjax;
     document.addEventListener('DOMContentLoaded', function () {
       pjax = new Pjax({
         elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
