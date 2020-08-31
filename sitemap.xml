@@ -179,13 +179,6 @@
 
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2020-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
@@ -193,7 +186,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -207,14 +200,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
+    <loc>https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
+    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -235,7 +228,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -248,14 +241,14 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E6%B8%B8%E6%88%8F/</loc>
@@ -265,7 +258,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -279,14 +272,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
+    <loc>https://www.extingstudio.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
+    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -307,7 +300,7 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -315,6 +308,13 @@
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
