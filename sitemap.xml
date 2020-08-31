@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.extingstudio.com/friends/index.html</loc>
+    
+    <lastmod>2020-08-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/artitalk/index.html</loc>
+    
+    <lastmod>2020-08-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.extingstudio.com/about/index.html</loc>
     
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/404.html</loc>
+    
+    <lastmod>2020-08-31</lastmod>
     
   </url>
   
@@ -135,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/shuoshuo/index.html</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/tags/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
@@ -155,24 +169,10 @@
     
   </url>
   
-  <url>
-    <loc>https://www.extingstudio.com/friends/index.html</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.extingstudio.com/404.html</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://www.extingstudio.com/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,70 +180,70 @@
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/JavaScript/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/Mac/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/Git/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -252,77 +252,77 @@
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/JavaScript/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/Git/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/Mac/</loc>
-    <lastmod>2020-08-28</lastmod>
+    <lastmod>2020-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
