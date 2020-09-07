@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.extingstudio.com/2019/09/10/2019-09-10-The_Most%20Commonly_Used_Git_Command_At_Work/</loc>
+    
+    <lastmod>2020-09-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.extingstudio.com/artitalk/index.html</loc>
     
     <lastmod>2020-09-07</lastmod>
@@ -108,13 +115,6 @@
   
   <url>
     <loc>https://www.extingstudio.com/2019/09/20/2019-09-20-Fisher-Yates%20-Shuffle/</loc>
-    
-    <lastmod>2020-08-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.extingstudio.com/2019/09/10/2019-09-10-The_Most%20Commonly_Used_Git_Command_At_Work/</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
+    <lastmod>2020-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.extingstudio.com/tags/Mac/</loc>
     <lastmod>2020-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -250,13 +257,6 @@
   
   <url>
     <loc>https://www.extingstudio.com/tags/Git/</loc>
-    <lastmod>2020-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.extingstudio.com/tags/LeetCode/</loc>
     <lastmod>2020-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -321,6 +321,13 @@
   </url>
   
   <url>
+    <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
+    <lastmod>2020-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2020-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -329,13 +336,6 @@
   
   <url>
     <loc>https://www.extingstudio.com/categories/Git/</loc>
-    <lastmod>2020-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.extingstudio.com/categories/LeetCode/</loc>
     <lastmod>2020-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
