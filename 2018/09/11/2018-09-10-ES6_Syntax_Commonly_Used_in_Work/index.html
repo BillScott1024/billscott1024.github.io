@@ -72,89 +72,89 @@
 
   }
 
-        function pjax_newcomment() {
+        // function pjax_newcomment() {
 
-          function queryLeanCloud(k) {
-            let root = this;
-            let len = arguments.length;
-            if (len == 1) {
-              if (!AV) {
-                console.log("no the fuck AV object!!");
-                return;
-              }
-              let notExist = new AV.Query("Comment");
-              notExist.doesNotExist('rid');
-              let isEmpty = new AV.Query("Comment");
-              isEmpty.equalTo('rid', '');
-              let q = AV.Query.or(notExist, isEmpty);
-              if (k === '*') q.exists('url');
-              else q.equalTo('url', decodeURI(k));
-              q.addDescending('createdAt');
-              q.addDescending('insertedAt');
-              return q;
-            } else {
-              let ids = JSON.stringify(arguments[1]).replace(/(\[|\])/g, '');
-              let cql = `select * from ${root['config']['clazzName']} where rid in (${ids}) order by -createdAt,-createdAt`;
-              return AV.Query.doCloudQuery(cql)
-            }
-          }
-          var valine = new Valine({
-            el: '#valine_container_ba（因为主题已经有valine的这些参数了，这里随意填都行）',
-            app_id: "OcH33On9kof4QnMnSaAOmDhj-MdYXbMMI",
-            app_key: "V50w1D4JtUK9s3VxbnTtg5XJ",
-            placeholder: '',
-            serverURLs: 'https://api-latestcomments-v2.extingstudio.com'
-          });
+        //   function queryLeanCloud(k) {
+        //     let root = this;
+        //     let len = arguments.length;
+        //     if (len == 1) {
+        //       if (!AV) {
+        //         console.log("no the fuck AV object!!");
+        //         return;
+        //       }
+        //       let notExist = new AV.Query("Comment");
+        //       notExist.doesNotExist('rid');
+        //       let isEmpty = new AV.Query("Comment");
+        //       isEmpty.equalTo('rid', '');
+        //       let q = AV.Query.or(notExist, isEmpty);
+        //       if (k === '*') q.exists('url');
+        //       else q.equalTo('url', decodeURI(k));
+        //       q.addDescending('createdAt');
+        //       q.addDescending('insertedAt');
+        //       return q;
+        //     } else {
+        //       let ids = JSON.stringify(arguments[1]).replace(/(\[|\])/g, '');
+        //       let cql = `select * from ${root['config']['clazzName']} where rid in (${ids}) order by -createdAt,-createdAt`;
+        //       return AV.Query.doCloudQuery(cql)
+        //     }
+        //   }
+        //   var valine = new Valine({
+        //     el: '#valine_container_ba（因为主题已经有valine的这些参数了，这里随意填都行）',
+        //     app_id: "OcH33On9kof4QnMnSaAOmDhj-MdYXbMMI",
+        //     app_key: "V50w1D4JtUK9s3VxbnTtg5XJ",
+        //     placeholder: '',
+        //     serverURLs: 'https://api-latestcomments-v2.extingstudio.com'
+        //   });
 
-          //判断博主，heson改为自己的昵称
-          function bozhu(e) {
-            if (e == "jaxsonwang@foxmail.com") {
-              mail = e + '[博主]'
-              return mail;
-            } else {
-              return e
-            }
-          }
+        //   //判断博主，heson改为自己的昵称
+        //   function bozhu(e) {
+        //     if (e == "jaxsonwang@foxmail.com") {
+        //       mail = e + '[博主]'
+        //       return mail;
+        //     } else {
+        //       return e
+        //     }
+        //   }
 
-          //判断网址
-          function wangzhi(e) {
-            http = e.slice(0, 4)
-            https = e.slice(0, 5)
-            if (http == "http" || https == "https") {
-              return e
-            } else if (e == "" || e == null || e == undefined) {
-              return e
-            } else {
-              e = 'http://' + e
-              return e
-            }
-          }
+        //   //判断网址
+        //   function wangzhi(e) {
+        //     http = e.slice(0, 4)
+        //     https = e.slice(0, 5)
+        //     if (http == "http" || https == "https") {
+        //       return e
+        //     } else if (e == "" || e == null || e == undefined) {
+        //       return e
+        //     } else {
+        //       e = 'http://' + e
+        //       return e
+        //     }
+        //   }
 
-          //查询评论
-          valine.Q('*').limit(7).find().then(function (comments) {
-            var hotComments = $("#hot-comments");
-            for (var i = 0; i < comments.length; i++) {
-              if (i === 0) {
-                // console.log(comments[0]);
-              }
-              var mail = bozhu(comments[i]._serverData.mail);
-              var nick = comments[i]._serverData.nick;
-              var content = comments[i]._serverData.comment;
-              var newcontent = content.substring(0, 50).replace(/<[^>]+>/g, "");
-              var url = comments[i]._serverData.url;
-              var link = wangzhi(comments[i]._serverData.link);
-              var updatedAt = timeago(comments[i].updatedAt);
-              var commentId = '#' + comments[i].id;
-              hotComments.append('<div class="card-comment-item"><div class="item-header-text"><a href="' + link + '" target="_blank" rel="nofollow noopener noreferrer" class="newcomment" >' + nick + '</a>&nbsp;发表于' + updatedAt + '</div><div class="item-text"><a href="' + url + commentId + '"  rel="nofollow" style="color:#717171" class="comments-detail" >' + newcontent + '</a></div></div>');
-            }
-          });
-        }
+        //   //查询评论
+        //   valine.Q('*').limit(7).find().then(function (comments) {
+        //     var hotComments = $("#hot-comments");
+        //     for (var i = 0; i < comments.length; i++) {
+        //       if (i === 0) {
+        //         // console.log(comments[0]);
+        //       }
+        //       var mail = bozhu(comments[i]._serverData.mail);
+        //       var nick = comments[i]._serverData.nick;
+        //       var content = comments[i]._serverData.comment;
+        //       var newcontent = content.substring(0, 50).replace(/<[^>]+>/g, "");
+        //       var url = comments[i]._serverData.url;
+        //       var link = wangzhi(comments[i]._serverData.link);
+        //       var updatedAt = timeago(comments[i].updatedAt);
+        //       var commentId = '#' + comments[i].id;
+        //       hotComments.append('<div class="card-comment-item"><div class="item-header-text"><a href="' + link + '" target="_blank" rel="nofollow noopener noreferrer" class="newcomment" >' + nick + '</a>&nbsp;发表于' + updatedAt + '</div><div class="item-text"><a href="' + url + commentId + '"  rel="nofollow" style="color:#717171" class="comments-detail" >' + newcontent + '</a></div></div>');
+        //     }
+        //   });
+        // }
 
       
 
   $(function () {
     pjax_valine();
-    pjax_newcomment();
+    // pjax_newcomment();
 
   });</script><script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script><script type="text/javascript">function getClientHeight(){var e=0;if(document.body.clientHeight&&document.documentElement.clientHeight)e=document.body.clientHeight<document.documentElement.clientHeight?document.body.clientHeight:document.documentElement.clientHeight;else e=document.body.clientHeight>document.documentElement.clientHeight?document.body.clientHeight:document.documentElement.clientHeight;return e}function supportCss3(e){var t,o=["webkit","Moz","ms","o"],n=[],d=document.documentElement.style,i=function(e){return e.replace(/-(\w)/g,function(e,t){return t.toUpperCase()})};for(t in o)n.push(i(o[t]+"-"+e));for(t in n.push(i(e)),n)if(n[t]in d)return!0;return!1}var options={bottom:"100px",right:"unset",left:"16px",time:"0s",mixColor:"#f4f4f4",backgroundColor:"#f4f4f4",buttonColorDark:"#333",buttonColorLight:"#ddd",saveInCookies:!0,label:"",autoMatchOsTheme:!0};function pjax_darkmodejs(){if(supportCss3("mix-blend-mode"))var e=setInterval(function(){if("undefined"!=typeof jQuery){clearInterval(e);var t=getClientHeight();$(window).scroll(function(){var e=$(document).scrollTop();t<e?($(".darkmode-layer").css("mix-blend-mode","normal"),$(".darkmode-layer").css("background-color","#222")):($(".darkmode-layer").css("mix-blend-mode","difference"),$(".darkmode-layer").css("background-color",""))})}},100)}supportCss3("mix-blend-mode")&&(window.darkmode=new Darkmode(options),window.darkmode.showWidget(),pjax_darkmodejs())</script><script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script><script src="/js/app.js"></script><script src="/js/search.js"></script><script>const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
 const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
@@ -464,7 +464,7 @@ const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
         
         
           pjax_valine();
-          pjax_newcomment();
+          // pjax_newcomment();
         
         
         
