@@ -302,27 +302,6 @@
   </entry>
   
   <entry>
-    <title>什么是WebSocket？</title>
-    <link href="https://www.extingstudio.com/2018/08/27/2018-01-25-About_WebSocket/"/>
-    <id>https://www.extingstudio.com/2018/08/27/2018-01-25-About_WebSocket/</id>
-    <published>2018-08-26T16:00:00.000Z</published>
-    <updated>2020-08-25T07:35:35.927Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="什么是WebSocket？"><a href="#什么是WebSocket？" class="headerlink" title="什么是WebSocket？"></a>什么是WebSocket？</h1><p>　</p><blockquote><p>　WebSocket协议是一种基于ＴＣＰ的一种新的网络协议。他实现了浏览器与服务器全双工(full-duplex)通信—-允许服务器主动发送信息给客户端。</p><p>　　　　　　　　　　　　　　　　　　　　　　　—-百度百科</p></blockquote><h2 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h2><p>　　在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” 。在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。在此WebSocket 协议中，为我们实现即时服务带来了两大好处：</p><h3 id="1-Header"><a href="#1-Header" class="headerlink" title="1. Header"></a>1. Header</h3><p>　　互相沟通的Header是很小的-大概只有 2 Bytes。</p><h3 id="2-Server-Push"><a href="#2-Server-Push" class="headerlink" title="2. Server Push"></a>2. Server Push</h3><p>　　服务器的推送，服务器不再被动的接收到浏览器的请求之后才返回数据，而是在有新数据时就主动推送给浏览器。</p><p>WebSocket与消息推送 - 张果 - 博客园<br><a href="https://www.cnblogs.com/best/archive/2016/09/12/5695570.html#_label2">https://www.cnblogs.com/best/archive/2016/09/12/5695570.html#_label2</a></p>]]></content>
-    
-    
-    <summary type="html">在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” 。在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。在此WebSocket 协议中，为我们实现即时服务带来了两大好处</summary>
-    
-    
-    
-    <category term="网络" scheme="https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="网络" scheme="https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用MWeb进行Markdown博客编辑</title>
     <link href="https://www.extingstudio.com/2018/08/27/2018-08-25-Mweb_for_markdown_on_mac/"/>
     <id>https://www.extingstudio.com/2018/08/27/2018-08-25-Mweb_for_markdown_on_mac/</id>
@@ -340,6 +319,27 @@
     
     
     <category term="博客" scheme="https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是WebSocket？</title>
+    <link href="https://www.extingstudio.com/2018/08/27/2018-01-25-About_WebSocket/"/>
+    <id>https://www.extingstudio.com/2018/08/27/2018-01-25-About_WebSocket/</id>
+    <published>2018-08-26T16:00:00.000Z</published>
+    <updated>2020-08-25T07:35:35.927Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是WebSocket？"><a href="#什么是WebSocket？" class="headerlink" title="什么是WebSocket？"></a>什么是WebSocket？</h1><p>　</p><blockquote><p>　WebSocket协议是一种基于ＴＣＰ的一种新的网络协议。他实现了浏览器与服务器全双工(full-duplex)通信—-允许服务器主动发送信息给客户端。</p><p>　　　　　　　　　　　　　　　　　　　　　　　—-百度百科</p></blockquote><h2 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h2><p>　　在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” 。在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。在此WebSocket 协议中，为我们实现即时服务带来了两大好处：</p><h3 id="1-Header"><a href="#1-Header" class="headerlink" title="1. Header"></a>1. Header</h3><p>　　互相沟通的Header是很小的-大概只有 2 Bytes。</p><h3 id="2-Server-Push"><a href="#2-Server-Push" class="headerlink" title="2. Server Push"></a>2. Server Push</h3><p>　　服务器的推送，服务器不再被动的接收到浏览器的请求之后才返回数据，而是在有新数据时就主动推送给浏览器。</p><p>WebSocket与消息推送 - 张果 - 博客园<br><a href="https://www.cnblogs.com/best/archive/2016/09/12/5695570.html#_label2">https://www.cnblogs.com/best/archive/2016/09/12/5695570.html#_label2</a></p>]]></content>
+    
+    
+    <summary type="html">在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” 。在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。在此WebSocket 协议中，为我们实现即时服务带来了两大好处</summary>
+    
+    
+    
+    <category term="网络" scheme="https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="网络" scheme="https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
