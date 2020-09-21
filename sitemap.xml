@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/index.html</loc>
+    <loc>https://www.extingstudio.com/mylist/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/mylist/index.html</loc>
+    <loc>https://www.extingstudio.com/tags/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -214,14 +214,14 @@
 
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.extingstudio.com/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -235,14 +235,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/JavaScript/</loc>
+    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/LayaBox/</loc>
+    <loc>https://www.extingstudio.com/tags/JavaScript/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -263,13 +263,6 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/Git/</loc>
-    <lastmod>2020-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
@@ -278,6 +271,13 @@
   
   <url>
     <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/tags/Git/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -293,14 +293,14 @@
 
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E6%B8%B8%E6%88%8F/</loc>
+    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.extingstudio.com/categories/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -314,14 +314,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/JavaScript/</loc>
+    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/LayaBox/</loc>
+    <loc>https://www.extingstudio.com/categories/JavaScript/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -342,13 +342,6 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/Git/</loc>
-    <lastmod>2020-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.extingstudio.com/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
@@ -357,6 +350,13 @@
   
   <url>
     <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.extingstudio.com/categories/Git/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
