@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/mylist/index.html</loc>
+    <loc>https://www.extingstudio.com/tags/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/index.html</loc>
+    <loc>https://www.extingstudio.com/mylist/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -221,14 +221,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.extingstudio.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,14 +270,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://www.extingstudio.com/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://www.extingstudio.com/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://www.extingstudio.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -349,14 +349,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://www.extingstudio.com/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://www.extingstudio.com/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
