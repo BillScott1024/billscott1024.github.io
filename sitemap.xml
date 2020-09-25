@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/mylist/index.html</loc>
+    <loc>https://www.extingstudio.com/tags/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/index.html</loc>
+    <loc>https://www.extingstudio.com/mylist/index.html</loc>
     
     <lastmod>2020-08-25</lastmod>
     
@@ -256,14 +256,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/Mac/</loc>
+    <loc>https://www.extingstudio.com/tags/Git/</loc>
     <lastmod>2020-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/tags/Git/</loc>
+    <loc>https://www.extingstudio.com/tags/Mac/</loc>
     <lastmod>2020-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +335,14 @@
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://www.extingstudio.com/categories/Git/</loc>
     <lastmod>2020-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.extingstudio.com/categories/Git/</loc>
+    <loc>https://www.extingstudio.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2020-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
